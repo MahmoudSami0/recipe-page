@@ -1,0 +1,141 @@
+@font-face {
+  font-family: outfit;
+  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: young-serif;
+  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 550px;
+  margin: 50px auto;
+}
+
+.container p {
+  color: hsl(26, 3%, 41%);
+}
+
+.container section .title {
+  color: hsl(14, 43%, 37%);
+  margin-bottom: 20px;
+}
+
+.container section h2 {
+  font-family: "young-serif";
+  font-weight: 500;
+}
+
+.container section {
+  margin-bottom: 20px;
+}
+
+.container hr {
+  margin-bottom: 20px;
+  border: 1px solid hsl(0, 0%, 89%);
+}
+
+.container ul li::marker,
+.container ol li::marker,
+.container .nutrition .include div span {
+  font-size: 15px;
+  font-weight: 700;
+  color: hsl(336, 49%, 28%);
+}
+
+.container ul li,
+.container ol li {
+  margin-bottom: 10px;
+  margin-left: 22px;
+}
+
+.container ul li span,
+.container ol li span {
+  color: hsl(27, 7%, 25%);
+}
+.container ul li p,
+.container ol li p {
+  margin-left: 20px;
+}
+
+.container p,
+.container span,
+li {
+  font-family: "outfit";
+}
+.container p {
+  font-weight: 400;
+}
+.container span {
+  font-weight: 600;
+}
+
+.container .meal_img img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.container .info .meal_name {
+  font-family: "young-serif";
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.container .prep_time {
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px;
+  border-radius: 20px;
+}
+.container .prep_time .title {
+  font-family: "outfit";
+  color: hsl(336, 49%, 28%);
+  font-size: 16px;
+}
+
+.include > ul {
+  margin-top: 20px;
+  display: flex;
+  margin-left: 5px;
+}
+
+.include ul {
+  width: 100%;
+  list-style: none;
+}
+
+.include ul hr {
+  width: 100%;
+}
+
+@media (max-width: 376px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    overflow: hidden;
+  }
+  .container .meal_img img {
+    border-radius: 0;
+  }
+  .container section {
+    padding-left: 25px;
+  }
+  .container .prep_time {
+    margin: 20px;
+  }
+}
